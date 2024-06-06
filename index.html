@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/bookmark.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Bookmarker</title>
+</head>
+<body>
+    <section id="bookmark" class="py-5">
+        <div class="container  d-flex justify-content-center align-items-center flex-column">
+            <h1 class="book py-2 position-relative text-center">Bookmarker</h1>
+        </div>
+        <div class="bookmark-body container p-3 py-4 mt-5 gap-4 d-flex justify-content-center align-items-center flex-column">
+            <h2 class="fs-5 ">
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+            <div class="site_name  d-flex justify-content-center align-items-start flex-column w-100">
+                <label for="bookmarkName" class="pb-2">
+                    <i class="fa-solid fa-book-bookmark pe-2"></i>
+                    Site Name
+                </label>
+                <input type="text"  placeholder="Bookmark Name" id="bookmarkName" class="form-control">
+            </div>
+            <div class="site_url  d-flex justify-content-center align-items-start flex-column w-100">
+                <label for="bookmarkUrl" class="pb-2">
+                    <i class="fa-solid fa-link pe-2"></i>
+                    Site URL
+                </label>
+                <input type="text" placeholder="Bookmark Name" id="bookmarkUrl" class="form-control">
+            </div>
+            <button class="btn btn-submit px-5" onclick= addSite() id="submitBtn" >Submit</button>
+        </div>
+        <table class="table mt-4 text-center bg-light container">
+            <thead>
+                <tr>
+                    <th class="text-capitalize">index</th>
+                    <th class="text-capitalize">Website Name</th>
+                    <th class="text-capitalize">Visit</th>
+                    <th class="text-capitalize">Delete</th>
+                </tr>
+            </thead>
+
+            <tbody id="tableContent">
+                <!-- <tr >
+                    <th class="text-capitalize">1</th>
+                    <th class="text-capitalize">Goodle</th>
+                    <th class="text-capitalize">
+                        <button class="btn btn-visit pe-2">
+                            <i class="fa-solid fa-eye pe-2"></i>
+                            <a href="https://www.youtube.com/" target="_blank">visit</a>
+                        </button>
+                    </th>
+                    <th class="text-capitalize">
+                        <button class="btn btn-delete pe-2" onclick="deleteProduct()">
+                            <i class="fa-solid fa-trash-can"></i>
+                            Delete
+                        </button>
+                    </th>
+                </tr> -->
+            </tbody>
+        </table>
+    </section>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
